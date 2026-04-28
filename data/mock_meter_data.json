@@ -1,0 +1,80 @@
+{
+  "household": {
+    "id": "BE-ENE-001234",
+    "address": "Antwerpsestraat 42, 2000 Antwerp",
+    "has_solar_panels": true,
+    "has_ev": true,
+    "ev_model": "Tesla Model 3",
+    "ev_battery_capacity_kwh": 75,
+    "monthly_budget_eur": 150
+  },
+  "tariffs": {
+    "peak_hours": "07:00-22:00",
+    "off_peak_hours": "22:00-07:00",
+    "peak_rate_eur_per_kwh": 0.35,
+    "off_peak_rate_eur_per_kwh": 0.15,
+    "solar_feed_in_rate_eur_per_kwh": 0.05
+  },
+  "daily_readings": [
+    {
+      "date": "2024-03-01",
+      "total_kwh_consumed": 28.5,
+      "total_kwh_solar_generated": 12.3,
+      "total_kwh_ev_charged": 15.0,
+      "gas_m3": 3.2,
+      "total_cost_eur": 8.20,
+      "appliance_breakdown": {
+        "heating_kwh": 8.5,
+        "washing_machine_kwh": 2.1,
+        "dishwasher_kwh": 1.8,
+        "ev_charging_kwh": 15.0,
+        "other_kwh": 1.1
+      },
+      "hourly_readings": [
+        {"hour": "00:00", "kwh": 0.8, "tariff": "off_peak", "solar_kwh": 0, "ev_charging": true},
+        {"hour": "01:00", "kwh": 0.9, "tariff": "off_peak", "solar_kwh": 0, "ev_charging": true},
+        {"hour": "02:00", "kwh": 0.8, "tariff": "off_peak", "solar_kwh": 0, "ev_charging": true},
+        {"hour": "03:00", "kwh": 0.7, "tariff": "off_peak", "solar_kwh": 0, "ev_charging": true},
+        {"hour": "04:00", "kwh": 0.6, "tariff": "off_peak", "solar_kwh": 0, "ev_charging": true},
+        {"hour": "05:00", "kwh": 0.5, "tariff": "off_peak", "solar_kwh": 0, "ev_charging": false},
+        {"hour": "06:00", "kwh": 1.2, "tariff": "off_peak", "solar_kwh": 0, "ev_charging": false},
+        {"hour": "07:00", "kwh": 2.1, "tariff": "peak", "solar_kwh": 0.2, "ev_charging": false},
+        {"hour": "08:00", "kwh": 1.8, "tariff": "peak", "solar_kwh": 0.8, "ev_charging": false},
+        {"hour": "09:00", "kwh": 1.2, "tariff": "peak", "solar_kwh": 1.5, "ev_charging": false},
+        {"hour": "10:00", "kwh": 0.9, "tariff": "peak", "solar_kwh": 2.1, "ev_charging": false},
+        {"hour": "11:00", "kwh": 0.8, "tariff": "peak", "solar_kwh": 2.8, "ev_charging": false},
+        {"hour": "12:00", "kwh": 1.1, "tariff": "peak", "solar_kwh": 3.2, "ev_charging": false},
+        {"hour": "13:00", "kwh": 1.0, "tariff": "peak", "solar_kwh": 2.9, "ev_charging": false},
+        {"hour": "14:00", "kwh": 0.9, "tariff": "peak", "solar_kwh": 2.5, "ev_charging": false},
+        {"hour": "15:00", "kwh": 1.0, "tariff": "peak", "solar_kwh": 1.8, "ev_charging": false},
+        {"hour": "16:00", "kwh": 1.3, "tariff": "peak", "solar_kwh": 1.2, "ev_charging": false},
+        {"hour": "17:00", "kwh": 2.2, "tariff": "peak", "solar_kwh": 0.5, "ev_charging": false},
+        {"hour": "18:00", "kwh": 2.8, "tariff": "peak", "solar_kwh": 0.1, "ev_charging": false},
+        {"hour": "19:00", "kwh": 2.5, "tariff": "peak", "solar_kwh": 0, "ev_charging": false},
+        {"hour": "20:00", "kwh": 2.1, "tariff": "peak", "solar_kwh": 0, "ev_charging": false},
+        {"hour": "21:00", "kwh": 1.8, "tariff": "peak", "solar_kwh": 0, "ev_charging": false},
+        {"hour": "22:00", "kwh": 1.2, "tariff": "off_peak", "solar_kwh": 0, "ev_charging": false},
+        {"hour": "23:00", "kwh": 0.9, "tariff": "off_peak", "solar_kwh": 0, "ev_charging": false}
+      ]
+    }
+  ],
+  "monthly_summary": {
+    "month": "March 2024",
+    "total_kwh_consumed": 820.5,
+    "total_solar_generated_kwh": 285.3,
+    "total_ev_charged_kwh": 210.0,
+    "total_gas_m3": 89.5,
+    "total_cost_eur": 187.40,
+    "budget_eur": 150,
+    "over_budget_eur": 37.40,
+    "peak_usage_hour": "18:00",
+    "highest_consumption_day": "2024-03-15",
+    "avg_daily_kwh": 27.35,
+    "insights": [
+      "Your EV charging accounts for 25% of your total electricity bill",
+      "Peak usage consistently between 17:00-20:00 — most expensive tariff window",
+      "Solar panels covered 34% of your total consumption in March",
+      "Washing machine runs detected at peak hours on 12 occasions"
+    ]
+  }
+}
